@@ -1,4 +1,8 @@
 <header>
+  @if (error()) {
+    <app-error-modal title="Ocorred an error" [message]="error()"/>
+  }
+
   <img src="logo.png" alt="Stylized globe" />
   <h1>PlacePicker</h1>
   <p>
